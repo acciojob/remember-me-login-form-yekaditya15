@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (savedUsername && savedPassword) {
             existingButton.style.display = 'block';
             existingButton.onclick = () => {
-                alert(`Logged in as ${savedUsername}.`);
+                alert(`Logged in as ${savedUsername}`);
             };
         } else {
             existingButton.style.display = 'none';
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.removeItem('password');
         }
 
-        alert(`Logged in as ${username}.`);
+        alert(`Logged in as ${username}`);
 
         // Update "Login as existing user" button state
         updateExistingButton();

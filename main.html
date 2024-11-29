@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="form-container">
-        <h1>Login Form</h1>
-        <form id="loginForm">
-            <div class="form-field">
-                <input type="text" id="username" placeholder="Username" required>
-            </div>
-            <div class="form-field">
-                <input type="password" id="password" placeholder="Password" required>
-            </div>
-            <div class="form-field checkbox-field">
-                <input type="checkbox" id="checkbox">
-                <label for="checkbox">Remember me</label>
-            </div>
-            <div class="form-field">
-                <input type="submit" id="submit" value="Submit">
-            </div>
-        </form>
-        <button id="existing" style="display: none;">Login as existing user</button>
-    </div>
-    <script src="./script.js"></script>
+    <h1>Login Form</h1>
+    <form id="loginForm">
+        <div class="form-field">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username" required>
+        </div>
+        <div class="form-field">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" required>
+        </div>
+        <div class="form-field">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Remember me</label>
+        </div>
+        <div class="form-field">
+            <input type="submit" id="submit" value="Submit">
+        </div>
+    </form>
+    <button id="existing" style="display: none;">Login as existing user</button>
+    <script src="script.js"></script>
 </body>
-
 </html>
